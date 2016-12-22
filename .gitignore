@@ -1,3 +1,5 @@
+#vim
+*.swp
 #eclipse
 .project
 .pydevproject
