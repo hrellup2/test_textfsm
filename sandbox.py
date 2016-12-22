@@ -2,10 +2,12 @@
 import textfsm
 
 
+out_file = 'examples/show_clock_out.txt'
+temp_file = 'examples/show_clock_temp.txt'
 
-template = open('examples/show_clock_temp.txt','r')
+template = open(temp_file,'r')
 
-with open('examples/show_clock_out.txt', 'r') as myfile:
+with open(out_file, 'r') as myfile:
     output=myfile.read().replace('\n', '')
 
 
