@@ -2,8 +2,8 @@
 import textfsm
 
 
-out_file = 'examples/show_clock_out.txt'
-temp_file = 'examples/show_clock_temp.txt'
+out_file = 'examples/show_version_output.txt'
+temp_file = 'examples/show_version_template.txt'
 
 template = open(temp_file,'r')
 
