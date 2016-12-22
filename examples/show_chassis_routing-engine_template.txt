@@ -6,8 +6,7 @@ Value CPUTemp (\d+)
 Value DRAM (\d+)
 Value Model (\S+)
 
-Start ^${Chassis} # Record current values and change state. 
- # No record will be output on first pass as 'Slot' is 'Required' but empty. 
+Start 
+^${Chassis}
 ^Routing Engine status: -> Record RESlot
-
 RESlot ^\s+Slot\s+${Slot} ^\s+Current state\s+${State} ^\s+Temperature\s+${Temp} degrees ^\s+CPU temperature\s+${CPUTemp} degrees ^\s+DRAM\s+${DRAM} MB # Transition back to Start state. ^\s+Model\s+${Model} -> Start
