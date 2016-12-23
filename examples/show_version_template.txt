@@ -1,7 +1,7 @@
 Value Version ([^ ,]+) 
-Value Uptime (.) 
+Value Uptime (.*) 
 Value ConfigRegister (\w+) 
-Value ResetReason (.)
+Value ResetReason (.*)
 
 Start 
   ^Cisco IOS .*Version ${Version}, 

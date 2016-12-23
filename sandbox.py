@@ -17,5 +17,6 @@ data = re_table.ParseText(output)
 
 print ', '.join(re_table.header)
 
+#for schleife
 for row in data:
  print ', '.join(row)
